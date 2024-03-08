@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+}
+  
+#main {
+  position: relative;
+  width: 100%;
+  font: 32pt Helvetica; 
+  color: white;
+  text-align: center;
+}
+
+#logo {
+  height: 300px;
+  padding-top: 80px;  
+}
+
+#title {
+  font-weight: bold;  
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  text-align: left;  
+}
+
+.label {
+  text-align: right;
+  padding-right: 40px;
+  color: #999;
+}
+
