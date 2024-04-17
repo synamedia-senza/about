@@ -2,7 +2,7 @@ window.addEventListener("load", async () => {
   try {
     await hs.init();
 
-    updateFields(hs.getDeviceInfo());
+    updateFields(hs.deviceManager.deviceInfo);
     updateFields(hs.envInfo);
     updateFields(hs.deviceManager.wifiInfo);
     
