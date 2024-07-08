@@ -1,13 +1,13 @@
 window.addEventListener("load", async () => {
   try {
-    await hs.init();
+    await senza.init();
 
-    updateFields(hs.deviceManager.deviceInfo);
-    updateFields(hs.envInfo);
-    updateFields(hs.deviceManager.wifiInfo);
+    updateFields(senza.deviceManager.deviceInfo);
+    updateFields(senza.envInfo);
+    updateFields(senza.deviceManager.wifiInfo);
     
-    hs.deviceManager.addEventListener("wifiInfoUpdated", () => {
-      updateFields(hs.deviceManager.wifiInfo);
+    senza.deviceManager.addEventListener("wifiInfoUpdated", () => {
+      updateFields(senza.deviceManager.wifiInfo);
     });
   } catch (error) {
     console.error(error);
