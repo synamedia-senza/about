@@ -9,6 +9,8 @@ window.addEventListener("load", async () => {
     senza.deviceManager.addEventListener("wifiInfoUpdated", () => {
       updateFields(senza.deviceManager.wifiInfo);
     });
+
+    senza.lifecycle.configure({autoBackground: false});
   } catch (error) {
     console.error(error);
   }
